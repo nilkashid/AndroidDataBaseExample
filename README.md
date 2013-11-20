@@ -23,7 +23,7 @@ example usage of internal storage: consider user store few file like xml files b
 Example usage of external storage: Consider u build android application which will download wallpapers or images and user want those images even user uninstall that application. In such cases you can save those files on SD card so that those will persist even user uninstall application.
 
 Pros and Corns :
-In shared preferences writing and reading from shared preferences is very simple and efficient but it store only simple data types/ it will store large data files like xml files or much complicated files like media files. 
+In shared preferences writing and reading from shared preferences is very simple and efficient but it store only simple data types; it will not store large data files like xml files or much complicated files like media files. 
 
 Internal storage provide small about of storage space to store data. also it uses applications internal memory.
 data safety is more cause data files expose to owner application only not to other application. 
