@@ -1,7 +1,7 @@
 AndroidDataBaseExample
 ======================
 This application will give you idea regarding all types of data storage in android. This will help's you to find out where and how to use what kind of data storage.Android mainly provide 4 types data storage.
-
+In this aplication I am giving example for each storeage method to write and read data from it.
 1. Shared Preferences.
 2. Internal data storage.
 3. External data storage.
