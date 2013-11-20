@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidsqliteexample"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="false" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <provider
+			android:name= "com.example.androidsqliteexample.StudentContentProvider"
+			android:authorities= "com.example.androidsqliteexample.studentcontentprovider"/>
+			        
+        <activity
+            android:name="com.example.androidsqliteexample.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.androidsqliteexample.SharedPfExample"
+            android:label="@string/title_activity_shared_pf_example" >
+        </activity>
+        <activity
+            android:name="com.example.androidsqliteexample.ExternalMemExample"
+            android:label="@string/title_activity_external_mem_example" >
+        </activity>
+        <activity
+            android:name="com.example.androidsqliteexample.InternalMemExample"
+            android:label="@string/title_activity_internal_mem_example" >
+        </activity>
+        <activity
+            android:name="com.example.androidsqliteexample.SqliteDBExample"
+            android:label="@string/title_activity_sqlite_dbexample" >
+        </activity>
+    </application>
+
+</manifest>

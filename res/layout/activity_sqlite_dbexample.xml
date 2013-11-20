@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SqliteDBExample" >
+
+    <TextView
+        android:id="@+id/dbName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student data base"/>
+
+    <EditText 
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/dbName"
+        android:hint="Student Name"/>
+    <EditText 
+        android:id="@+id/standard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/name"
+        android:hint="Student Standard"/>
+    <EditText 
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/standard"
+        android:hint="Student City"/>
+    <EditText 
+        android:id="@+id/marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/city"
+        android:hint="Student Marks"/>
+    <Button 
+        android:id="@+id/createRecordButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Record"
+        android:layout_below="@id/marks"
+        android:textSize="25sp"/>
+    
+    <EditText 
+        android:id="@+id/idValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/createRecordButton"
+        android:hint="Get Value By Id"/>
+    
+    <EditText 
+        android:id="@+id/nameValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/idValue"
+        android:hint="Get Value By Name"/>
+    
+    <Button 
+        android:id="@+id/getValueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Record"
+        android:layout_below="@id/nameValue"
+        android:textSize="25sp"/>
+    
+    <Button 
+        android:id="@+id/deleteValueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Record"
+        android:layout_below="@id/nameValue"
+        android:layout_toRightOf="@id/getValueButton"
+        android:textSize="24sp"/>
+    
+    <TextView 
+        android:id="@+id/retriveValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_below="@id/getValueButton"
+        />
+</RelativeLayout>

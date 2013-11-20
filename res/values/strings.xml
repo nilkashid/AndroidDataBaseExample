@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidSqliteExample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_shared_pf_example">SharedPfExample</string>
+    <string name="title_activity_external_mem_example">ExternalMemExample</string>
+    <string name="title_activity_internal_mem_example">InternalMemExample</string>
+    <string name="title_activity_sqlite_dbexample">SqliteDBExample</string>
+
+</resources>
